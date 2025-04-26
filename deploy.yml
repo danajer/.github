@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
-      - name: Gunakan Token
+      - name: Token_bot_telegram
         run: |
           echo "Token bot: ${{ secrets.TELEGRAM_BOT_TOKEN }}"
           echo "Mode: ${{ vars.DEPLOY_MODE }}"
