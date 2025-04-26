@@ -1,0 +1,22 @@
+name: Deploy Bot Telegram
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    environment: 
+      name: Telegram_bot_token  # Nama environment yang tadi dibuat
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Gunakan Token
+        run: |
+          echo "Token bot: ${{ secrets.TELEGRAM_BOT_TOKEN }}"
+          echo "Mode: ${{ vars.DEPLOY_MODE }}"
+          # Di sini bisa tambahkan perintah deploy bot Anda
