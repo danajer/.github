@@ -1,3 +1,8 @@
+## Keamanan
+- Jangan simpan token langsung di kode.  
+- Gunakan GitHub Secrets untuk deployment.  
+- Laporkan vulnerability via **Security > Reporting**.  
+
 # Security Policy
 
 ## Supported Versions
