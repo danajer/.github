@@ -1,3 +1,6 @@
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_CHAT_ID=your_chat_id_here
+
 ## Keamanan
 - Jangan simpan token langsung di kode.  
 - Gunakan GitHub Secrets untuk deployment.  
